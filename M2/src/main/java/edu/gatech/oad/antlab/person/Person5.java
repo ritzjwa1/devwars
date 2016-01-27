@@ -1,4 +1,4 @@
-package edu.gatech.oad.antlab.person;
+// package edu.gatech.oad.antlab.person;
 
 /**
  *  A simple class for person 5
@@ -11,7 +11,8 @@ package edu.gatech.oad.antlab.person;
 public class Person5 {
   /** Holds the persons real name */
   private String name;
-  	/**
+
+   	/**
 	 * The constructor, takes in the persons
 	 * name
 	 * @param pname the person's real name
@@ -31,7 +32,7 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+	  return input.substring(input.length() - 2, input.length()) + input.substring(0, input.length()-2);
 	}
 	
 	/**

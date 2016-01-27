@@ -32,10 +32,10 @@ public class Person1 {
 	private String calc(String input) {
 	  //Person 1 put your implementation here
         String newString = "";
-        for (int i = 0; i < newString.length(); i++) {
-            newString = newString + input.charAt((newString.length - 2) % input.length());
+        for (int i = 2; i < input.length() + 2; i++) {
+            newString = newString + input.charAt(i % input.length());
         }
-	  return newString;
+        return newString;
 	}
 	
 	/**

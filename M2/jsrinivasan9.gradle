@@ -1,0 +1,22 @@
+//Set default task
+defaultTasks   'jar'
+
+
+apply plugin: 'java'
+
+//Define jar file contents
+jar  {
+  manifest {
+     attributes  'Implementation-Title' : 'M2' ,
+                 'Implementation-Version' : '1.0',
+                 'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+                 'Class-Path' : 'resources.jar'
+    }
+
+    destinationDir = file(".")
+    archiveName = 'build/libs/M2.jar'
+}
+
+dependencies {
+  compile files('lib/resources.jar')
+}

@@ -7,7 +7,6 @@
  * user guide available at http://gradle.org/docs/2.3/userguide/tutorial_java_projects.html
  */
 
-/*
 
 defaultTasks   'jar'
 
@@ -37,4 +36,3 @@ dependencies {
   compile files('lib/resources.jar')
 }
 
-*/

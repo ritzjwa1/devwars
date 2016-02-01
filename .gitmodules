@@ -1,0 +1,3 @@
+[submodule "devwarsAndroid"]
+	path = devwarsAndroid
+	url = https://github.com/ganhari123/devwarsAndroid

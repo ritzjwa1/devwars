@@ -1,0 +1,31 @@
+
+//Alex Freeney
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+apply plugin: 'findbugs'
+
+apply plugin: 'checkstyle'
+
+apply plugin: 'pmd'
+
+apply plugin: 'application'
+
+
+//Define the contents of the jar file
+
+jar {
+    manifest {
+        attributes  'Implementation-Title' : 'M2_afreeney3' ,
+                'Implementation-Version' : '1.0',
+                'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain' ,
+                'Class-Path' : './lib/resources.jar'
+    }
+    destinationDir = file(".")
+    archiveName = 'build/libs/M2.jar'
+}
+
+dependencies {
+    compile files('./lib/resources.jar')
+}

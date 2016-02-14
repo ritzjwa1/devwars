@@ -4,3 +4,6 @@
 [submodule "PandangoWebApp"]
 	path = PandangoWebApp
 	url = https://github.com/jagsr8/PandangoWebApp.git
+[submodule "PandangoServerTemp"]
+	path = PandangoServerTemp
+	url = https://github.com/ganhari123/PandangoServerTemp
